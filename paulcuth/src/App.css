@@ -1,0 +1,67 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.square {
+  border: 1px solid grey;
+  font-size: 10rem;
+  background-color:  whitesmoke;
+  color: inherit;
+  position: relative;
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+
+  &:focus {
+    border: 4px solid black;
+    background-color: paleturquoise;
+  }
+
+  [data-ctrl-down=true] &[data-empty=true]::after {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    content: attr(data-index);
+    font-size: 1rem;
+    border: 2px solid slategrey;
+    border-radius: 4px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: darkslategrey;
+  }
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkslategrey;
+  color: whitesmoke;
+  font-size: 2em;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: darkslategrey;
+  color: whitesmoke;
+  font-size: 2em;
+}
+
+
