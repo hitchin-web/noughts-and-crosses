@@ -63,9 +63,9 @@ Let's look at nought's winning line in the example above. That diagonal line's v
 The result is the same value as the mask; we have a winner!
 
 You can find the following parts in the code:
-- The winning lines, represented as decimals
-- Calculating the value of each player's turns
-- Using `AND` (which is `&` in JavaScript) to work out if it's a winner
+- [The winning lines, represented as decimals](https://github.com/hitchin-web/noughts-and-crosses/blob/84a34a158a167e8e66f3d52cde2cc8185df7b238/paulcuth/src/App.js#L11)
+- [Calculating the value of each player's turns](https://github.com/hitchin-web/noughts-and-crosses/blob/84a34a158a167e8e66f3d52cde2cc8185df7b238/paulcuth/src/App.js#L95C9-L95C80)
+- [Using `AND` (which is `&` in JavaScript) to work out if it's a winner](https://github.com/hitchin-web/noughts-and-crosses/blob/84a34a158a167e8e66f3d52cde2cc8185df7b238/paulcuth/src/App.js#L100C9-L100C53)
 
 
 ## Notes
